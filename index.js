@@ -51,6 +51,6 @@ app.post("/submit-form", (req, res) => {
 });
 
 // Start the server
-app.listen(port, 'localhost', () => {
+app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
