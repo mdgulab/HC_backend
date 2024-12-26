@@ -49,7 +49,12 @@ app.post("/submit-form", (req, res) => {
     }
   });
 });
-
+// API Endpoint to handle form submission
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Home"
+  })
+});
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
